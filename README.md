@@ -22,5 +22,6 @@ Proposed implementation is to use Apache OpenWhisk. OpenWhisk is a portable serv
 
 ### Create a local environment
 
-Follow [this instructions](https://github.com/apache/openwhisk-deploy-kube/blob/master/docs/k8s-kind.md#deploying-openwhisk-on-kind) to create a local cluster
- 
+* Follow [this instructions](https://github.com/apache/openwhisk-deploy-kube/blob/master/docs/k8s-kind.md#deploying-openwhisk-on-kind) to create a local cluster
+* Deploy [local cluster with Helm](https://github.com/apache/openwhisk-deploy-kube#deploy-with-helm). Need to clone `openwhisk-deploy-kube` repository locally
+* try: `wsk -i property get` 

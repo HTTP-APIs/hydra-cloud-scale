@@ -1,0 +1,12 @@
+whisk:
+  ingress:
+    type: NodePort
+    apiHostName: 172.20.0.2
+    apiHostPort: 31001
+
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+
+nginx:
+  httpsNodePort: 31001
