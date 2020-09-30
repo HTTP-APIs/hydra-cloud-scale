@@ -9,4 +9,18 @@ Practically:
 * the `ApiDoc` is destructured into its `HydraClass`es and for each of them a hydrus instance is spawned
 * every authorised agent (`hydra-python-agent`) can connect to the cluster, build its own data graph and run queries and receive data updates.
 
-PS. we are looking for a devops expert to support our mentors and students to realise this project, [Join our Slack](https://join.slack.com/t/hydraecosystem/shared_invite/enQtNzM3NTg5NzQ2MDUxLWU1MjM3ZGRhZWM4ZTg1ODBjMTljNTQwNzAwMGM3ZDlmYTY3Y2E4OGJmN2NlZWRjMWIzY2MzN2NjOTIyYmQ1ZjU) and drop a message (:
+## Local test implementation
+
+Proposed implementation is to use Apache OpenWhisk. OpenWhisk is a portable serverless framework that works on top of popular technologies like Docker (i.e. Docker-On-Docker) and Kubernetes.
+
+### Prerequisites
+* install Docker and latest stable version of GoLang
+* install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-with-curl-on-linux)
+* install `kind` (GoLang library, only used for local development) following [these instructions](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
+* install [OpenWhisk wsk CLI](https://github.com/apache/openwhisk-cli#compile-the-binary-using-your-local-go-environment)
+* install [OpenWhisk wskdeploy](https://openwhisk.apache.org/documentation.html#wskdeploy)
+
+### Create a local environment
+
+Follow [this instructions](https://github.com/apache/openwhisk-deploy-kube/blob/master/docs/k8s-kind.md#deploying-openwhisk-on-kind) to create a local cluster
+ 
